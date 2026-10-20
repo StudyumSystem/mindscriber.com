@@ -123,4 +123,12 @@ footer a { text-decoration: none; }
   .split { grid-template-columns: 1fr 1fr; align-items: center; }
   .block { padding: 96px 0; }
 }
+/* Narrow phones: the header stays on one line. */
+@media (max-width: 420px) {
+  .top nav { gap: 12px; font-size: 14px; }
+  .nav-cta { padding: 6px 12px; }
+}
+@media (max-width: 350px) {
+  .top nav a:not(.nav-cta) { display: none; }
+}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
